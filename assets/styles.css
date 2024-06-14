@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Girassol&display=swap'); 
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #000;
+    font-family: "Girassol", serif;}
+
+.card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    max-width: 300px;
+    margin: 20px;
+    overflow: hidden;
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card-img {
+    width: 100%;
+    height: auto;
+}
+
+.card-content {
+    padding: 15px;
+}
+
+.card-title {
+    font-size: 1.3em;
+    margin: 0 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.card-description {
+    font-size: 1em;
+    color: #666;
+    margin: 0 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.card-button {
+    display: inline-block;
+    padding: 10px 15px;
+    color: #fff;
+    background-color: #000;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    display: flex;
+    justify-content: center;
+}
+
+.card-button:hover {
+    background-color: #666;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    body {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .card {
+        max-width: 100%;
+        margin: 10px 0;
+    }
+
+    .card-title {
+        font-size: 1.2em;
+    }
+
+    .card-description {
+        font-size: 0.9em;
+    }
+
+    .card-button {
+        padding: 8px 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .card-title {
+        font-size: 1.1em;
+    }
+
+    .card-description {
+        font-size: 0.8em;
+    }
+
+    .card-button {
+        padding: 6px 10px;
+    }
+}
